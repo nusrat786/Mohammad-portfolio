@@ -72,7 +72,7 @@ fieldset{
 
 #about{
 	background-color: #1aa3ff;
-	height: 100vh;
+	/*height: 100vh;*/
 	border: 1px solid lightblue;
 	/*position: relative;
 	z-index: 1;*/
@@ -80,18 +80,18 @@ fieldset{
 
 
 .about{
-	max-width: 750px;
-	width: 100%;
+	/*max-width: 750px;*/
+	/*width: 100%;*/
 	color: black;
-	/*position: absolute;*/
-	/*position: relative;*/
-	margin: auto;
-	top:0;
+	/*border: 1px solid black;*/
+	
+	margin: 100px;
+	/*top:0;
 	bottom: 0;
 	left: 0;
-	right: 0;
-	padding: 20px;
-	height: 70vh;
+	right: 0;*/
+	padding: 50px 150px;
+	/*height: 70vh;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -602,12 +602,23 @@ font-size: 1em;
 
 /*media queries*/
 
+
+
 @media screen and (max-width: 600px){
 	#welcome-section{
 			padding: 20px;
 	}
 	#welcome-section > img{
 		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.about{
+		margin: 0px;
+		width: 100%;
+		padding: 30px;
+
 	}
 }
 
