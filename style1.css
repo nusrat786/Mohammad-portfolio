@@ -38,7 +38,7 @@ body{
 .navbar-brand{
 	height: 85px;
 }
-.container > img{
+.header-section .container > img{
 	border-radius: 50%;
 	}
 
@@ -110,7 +110,7 @@ body{
 #projects{
 	
 }
-.row {
+#projects .row {
 	display: flex;
 	flex-direction: row;
 	margin: 100px;
@@ -123,7 +123,7 @@ body{
 	
 }
 
-.column{
+#projects .column{
 	flex: 1;
 	/*flex-direction:row;*/
 	border-left: 1px solid #f0f5f5;
@@ -160,12 +160,6 @@ body{
 	 
 }
 
-#work-section{
-	
-	/*border: 1px solid lightblue;*/
-	
-
-}
 
 .recent-works{
 	margin: 100px;
@@ -197,7 +191,7 @@ body{
 	margin: 20px;
 	border-radius: 15px;
 	position: relative;
-	/*font-weight: 400;*/
+	
 
 	
 }
@@ -292,39 +286,30 @@ body{
 	border: 1px solid lightblue;
 }
 
-.collaboration{
+#collaboration .container{
 	margin: 100px;
 	align-items: center;
 	text-align: center;
-	/*height: 500px;*/
-	border: 1px solid red;
-	/*padding: 50px;*/
 	color: black;
 }
 .companies-header{
-	/*margin:30px 70px;*/
+	
 	max-width: 700px;
 	width: 100%;
 	margin: auto;
-	/*border: 1px solid black;*/
 	padding: 50px;
 }
-/*h4{
-	padding: 20px;
-}*/
 
-.collab-row1, .collab-row2 {
+#collaboration .container .row {
 	display: flex;
-	/*flex-flow: wrap;*/
+	flex-direction: row;
+	
 
 	
 }
 
-.colab-col{
+#collaboration .container .column{
 	flex: 1;
-
-	
-	/*border: 1px solid black;*/
 	margin: 20px;
 	align-items: center;
 	text-align: center;
@@ -333,16 +318,15 @@ body{
 .logo{
 	object-fit: cover;
 	max-width: 238px;
-	/*width: 100%;*/
 	max-height: 90px;
-	/*height: 100%*/
+	
 }
+
 
 /*start-up section style*/
 
 #start-up{
 	background-color: #1aa3ff;
-	/*height: 100vh;*/
 	border: 1px solid lightblue;
 
 }
@@ -355,7 +339,6 @@ body{
 	align-items: center;
 	font-size: 20px;
 	padding: 50px;
-	/*border: 1px solid black;*/
 	line-height: 1.5;
 
 }
@@ -365,7 +348,7 @@ body{
 	width: 100%;
 	margin: auto;
 	
-	/*border: 1px solid white;*/
+	
 }
 
 .info h3{
@@ -381,13 +364,11 @@ body{
 
 
 .start-up-project{
-	/*border: 1px solid green;*/
 	margin:100px;
 	color: black;
 	text-align: center;
 	align-items: center;
-	/*padding: 50px;*/
-	/*position: absolute;*/
+	
 }
 
 .interest-in-collaboration{
@@ -599,6 +580,24 @@ font-size: 1em;
 
 /*media queries*/
 
+@media screen and (max-width: 600px){
+	#collaboration .container{
+		margin: 0;
+		flex-direction: column;
+		padding: 10px;
+	}
+	#collaboration .container .column{
+		margin: 10px;
+	}
+
+	.logo{
+		width: 170px;
+		height: 70px;
+		object-fit: cover;
+	}
+}
+
+
 
 
 @media screen and (max-width: 600px){
@@ -653,7 +652,7 @@ font-size: 1em;
 
 
 @media screen and (max-width:600px){
-	.row{
+	#projects .row{
 		margin: 0px;
 		flex-direction: column;
 		width: 100%;
@@ -661,7 +660,7 @@ font-size: 1em;
 
 
 	}
-	.column{
+	#projects .column{
 		margin: 0px 20px;
 
 		
