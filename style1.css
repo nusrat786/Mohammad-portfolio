@@ -5,14 +5,12 @@
 }
 html,body{
 	width: 100%;
-	/*height: 100%;*/
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
 }
 body{
 	margin: 0px;
-	/*font-family: 'Poppins', sans-serif;*/
 	font-family: 'Amiri', serif;
 	line-height: 1.4;
 	font-weight: 400;
@@ -26,7 +24,6 @@ body{
 	background-color: #be3144;
 	color: white;
 	width: 100%;
-	/*height: 90px;*/
 	position: fixed;
 	z-index: 20;
 	
@@ -42,8 +39,6 @@ body{
 #welcome-section{
 	display: flex;
 	flex-direction: column;
-	/*margin-top: 90px;*/
-	/*width: 100%;*/
 	text-align: center;
 	height: 100vh;
 	align-items: center;
@@ -58,7 +53,7 @@ body{
 }
 
 #welcome-section> p {
-	/*font-size: 20px;*/
+	
     font-weight: 50;
     font-style: italic;
     color: #be3144;
@@ -608,6 +603,15 @@ font-size: 1em;
 /*media queries*/
 
 @media screen and (max-width: 600px){
+	#welcome-section{
+			padding: 20px;
+	}
+	#welcome-section > img{
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 600px){
 	.footer{
 		margin: 0px;
 		width: 100%;
@@ -617,17 +621,20 @@ font-size: 1em;
 
 @media screen and (max-width: 600px){
 	.testimonial{
-		margin: 10px;
+		margin: 10px 0px;
 		width: 100%;
+		padding: 10px;
 		
 	}
 	.quote{
-		padding: 10px;
+		margin-top: 10px;
+		width: 100%;
+		padding:0px;
 	}
 
 	.carousel-indicators{
 	
-	top: 330px;
+	top: 340px;
 	
 	
 }
