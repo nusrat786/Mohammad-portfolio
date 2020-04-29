@@ -582,18 +582,22 @@ font-size: 1em;
 
 @media screen and (max-width: 600px){
 	#collaboration .container{
-		margin: 0;
+		margin: 10px;
 		flex-direction: column;
 		padding: 10px;
 	}
 	#collaboration .container .column{
-		margin: 10px;
+		/*margin: 10px;*/
+		flex: .5px;
 	}
 
 	.logo{
 		width: 170px;
 		height: 70px;
 		object-fit: cover;
+	}
+	.companies-header{
+		padding: 0px;
 	}
 }
 
