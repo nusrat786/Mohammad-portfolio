@@ -33,12 +33,15 @@ body{
 }
 
 .navbar-brand{
-	height: 80px;
+	height: 85px;
 }
+.container > img{
+	border-radius: 50%;
+	}
 
 #welcome-section{
-	display: flex;
-	flex-direction: column;
+	/*display: flex;
+	flex-direction: column;*/
 	text-align: center;
 	height: 100vh;
 	align-items: center;
@@ -47,12 +50,14 @@ body{
 	background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
-
-#welcome-section> h1{
+.welcome-section{
+	margin: 100px;
+}
+.welcome-section> h1{
 	padding-top: 30px;
 }
 
-#welcome-section> p {
+.welcome-section> p {
 	
     font-weight: 50;
     font-style: italic;
@@ -60,38 +65,30 @@ body{
     margin-top: 0px;
 }
 
-fieldset{
+/*fieldset{
 	border: none;
-}
+}*/
 
-#welcome-section> img, .container > img{
+.welcome-section> img{
 	border-radius: 50%;
+	margin-top: 80px;
 }
 
 
 
 #about{
 	background-color: #1aa3ff;
-	/*height: 100vh;*/
+	
 	border: 1px solid lightblue;
-	/*position: relative;
-	z-index: 1;*/
+	
 }
 
 
 .about{
-	/*max-width: 750px;*/
-	/*width: 100%;*/
-	color: black;
-	/*border: 1px solid black;*/
 	
+	color: black;
 	margin: 100px;
-	/*top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;*/
 	padding: 50px 150px;
-	/*height: 70vh;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -605,12 +602,14 @@ font-size: 1em;
 
 
 @media screen and (max-width: 600px){
-	#welcome-section{
-			padding: 20px;
+	.welcome-section{
+			margin: 0px;
+			width: 100%;
+			padding: 80px 30px 30px 30px;
 	}
-	#welcome-section > img{
+	/*#welcome-section > img{
 		margin-top: 50px;
-	}
+	}*/
 }
 
 @media screen and (max-width: 600px){
