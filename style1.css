@@ -539,6 +539,7 @@ font-size: 1em;
 .carousel-indicators{
 	
 	top: 320px;
+
 	
 }
 
@@ -623,6 +624,13 @@ font-size: 1em;
 	.quote{
 		padding: 10px;
 	}
+
+	.carousel-indicators{
+	
+	top: 320px;
+	
+	
+}
 	
 }
 
@@ -632,15 +640,14 @@ font-size: 1em;
 		margin: 0px;
 		flex-direction: column;
 		width: 100%;
-		/*border-radius: 0px;*/
+		
 
 
 	}
 	.column{
 		margin: 0px 20px;
 
-		/*flex-direction: column;
-		width: 100%;*/
+		
 	}
 	
 	
@@ -678,8 +685,7 @@ font-size: 1em;
 @media screen and (max-width:600px){
 	.start-up-project, .interest-in-collaboration{
 		margin: 10px;
-		/*width: 100%;*/
-		/*flex-direction: column;*/
+		
 	}
 
 	.start-up-row1,.start-up-row2{
